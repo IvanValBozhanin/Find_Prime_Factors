@@ -9,6 +9,14 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
+        if(n == 1){
+            System.out.println("1 is neither a prime nor a composite.");
+            return;
+        }
+        if(n == 2){
+            System.out.println("2 is a prime number.");
+            return;
+        }
         Set<Integer> primeFactors = new TreeSet<>();
         if(n%2 == 0){
             primeFactors.add(2);
